@@ -210,8 +210,22 @@ footer {
     gap: 1rem;
 }
 
+.menu-checkbox,
+.menu-icon {
+    display: none;
+}
+
+.nav-menu .auth-buttons {
+    display: none;
+}
+
 
 @media (max-width: 768px) {
+
+    .body-container {
+        /* gap: 100px; */
+        padding-top: 64px;
+    }
 
     body {
         padding: 0px;
@@ -258,5 +272,68 @@ footer {
     #brands {
         flex-direction: column;
         gap: 20px;
+    }
+
+    /* header section responsiveness */
+
+      .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Hide the regular nav menu on mobile */
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Show mobile nav items in a vertical list */
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Show the hamburger icon */
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* Toggle Navigation when checkbox is checked */
+    .menu-checkbox:checked + .nav-menu {
+        display: block;
+    }
+
+    /* Adjust auth buttons for mobile */
+    .auth-buttons {
+        display: none; /* Hide login/signup buttons on mobile */
+    }
+
+    .nav-menu .auth-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .nav-menu .btn {
+        width: 40%; /* Makes buttons nearly full-width */
+        padding: 14px 20px; /* Adjust padding for mobile */
+        font-size: 0.9rem; /* Slightly smaller font */
+    }
+
+    .nav-menu .login-button {
+        background-color: #F2F5F6;
     }
 }
