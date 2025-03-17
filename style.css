@@ -143,7 +143,7 @@ footer {
     background-color: inherit;
 }
 
-.play-icon {
+.play-icon-btn {
     margin-bottom: -0.6rem;
 }
 
@@ -217,6 +217,74 @@ footer {
 
 .nav-menu .auth-buttons {
     display: none;
+}
+
+/* styles for video section */ 
+
+#video-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    background-color: var(--primary-color);
+    padding: 40px 200px 0px 200px;
+}
+
+
+
+.video-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.video-title .highlight {
+    color: #FFC107; /* Adjust based on your design */
+}
+
+.video-description {
+    font-size: 1rem;
+    color: white;
+     width: 40%; 
+}
+
+/* Thumbnail Wrapper */
+.video-thumbnail {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+/* Play Icon Styling */
+.play-button {
+    position: relative;
+    display: block;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.play-button:hover .play-icon {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.8;
+}
+
+.video-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
 }
 
 
