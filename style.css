@@ -8,13 +8,13 @@
 body {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.4;
     padding: 20px;
 }
 
 /* Define a primary color palette using CSS variables */
 :root {
-    --primary-color: #007bff;
+    --primary-color: #043A53;
     --secondary-color: #6c757d;
     --accent-color: #28a745;
 }
@@ -49,4 +49,71 @@ footer {
     background-color: var(--secondary-color);
     color: white;
     padding: 10px 0;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 18px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease, transform 0.2s ease; */
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    /* background-color: aquamarine; */
+    color: white;
+}
+
+.heading {
+    font-size: 44px;
+    font-weight: bold;
+}
+
+/* hero section styles */
+
+#hero {
+    text-align: center;
+    background-color: #F2F5F6;
+    padding: 50px 20px;
+    width: 100%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.inner-hero-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.highlight {
+    color: #043A53;
+}
+
+.btn-check-video {
+    background-color: inherit;
+}
+
+.play-icon {
+    margin-bottom: -0.6rem;
+}
+
+.hero-para {
+    font-size: 1.1rem;
+    color: #12141D;
 }
