@@ -328,6 +328,39 @@ footer {
     gap: 10px;
 }
 
+/* building-bridges styles */
+
+#building-bridges {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.bridge-content {
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bridge-content .btn {
+    width: fit-content;
+}
+
+.customer-img {
+    height: 600px;
+}
+
+.bridge-content .highlight {
+    color: #92A7B0;
+}
+
+.arrow {
+    margin-bottom: -0.6rem;
+}
+
 @media (max-width: 768px) {
 
     .body-container {
@@ -521,4 +554,13 @@ footer {
     .benifit-para {
         text-align: center;
     }
+
+    /* bridge section styles */
+    /* #building-bridges {
+        padding-right: 20px;
+    }
+
+    .bridge-content {
+        
+    } */
   }
