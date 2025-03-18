@@ -311,12 +311,12 @@ footer {
   .benefit-card {
     flex: 1;
     background: #fff;
-    padding: 10px;
+    padding: 20px;
     border-radius: 8px;
     background-color: #F2F5F6;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
+    /* text-align: center; */
   }
 
 
@@ -469,7 +469,27 @@ footer {
     .video-description {
         font-size: 0.8rem;
     }
-        
+     
+    /* benefits mobile view styles defining */
+
+    #benefits {
+        flex-direction: column;
+        padding: 2rem 10px 0 10px;
+        gap: 20px;
+    }
+
+    .benefit-cards {
+        flex-direction: column;
+    }
+
+    .benificial-card {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .benifit-para {
+        text-align: center;
+    }
 }
 
 
@@ -480,5 +500,25 @@ footer {
 
     .video-description {
         font-size: 0.9rem;
+    }
+
+    #benefits {
+        flex-direction: column;
+        padding: 2rem 10px 0 10px;
+        gap: 20px;
+    }
+
+    .benefit-cards {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .benificial-card {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .benifit-para {
+        text-align: center;
     }
   }
