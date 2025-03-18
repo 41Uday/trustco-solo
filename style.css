@@ -182,4 +182,11 @@ footer {
     .hero-para {
         font-size: 0.8rem;
     }
+
+    /* brands section responsiveness */
+
+    #brands {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
