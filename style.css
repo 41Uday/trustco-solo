@@ -566,6 +566,23 @@ footer {
         height: 450px;
         width: 100vw;
     }
+
+    /* mobile responsive styles for number sections */ 
+    
+    .numbers-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        text-align: center;
+    }  
+    .numbers-container .number {
+        font-size: 2rem;
+        color: #043A53;
+    }
+    
+    .numbers-container .description {
+        font-size: 1rem;
+    }
     
     
 }
