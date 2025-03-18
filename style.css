@@ -397,7 +397,6 @@ footer {
 
 #meet-founder .bridge-content {
     max-width: 40%;
-
 }
 
 #meet-founder .bridge-content .name {
@@ -603,7 +602,30 @@ footer {
         font-size: 1rem;
     }
     
-    
+    /* founder section mobile responsiveness */
+
+    #meet-founder {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        padding:20px;
+    }
+
+    #meet-founder .bridge-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;  
+    }
+
+    #meet-founder .bridge-content {
+        max-width: 100%;
+        
+    }
+
+    #meet-founder .customer-img {
+        max-width: 99%;
+    }
 }
 
 
@@ -656,8 +678,12 @@ footer {
         margin-top: 20px;
     }
 
-    /* founder section responsiveness
+    /* founder section responsiveness */
     #meet-founder {
         padding:0 50px;
-    } */
+    }
+
+    #meet-founder .customer-img {
+        max-width: 60%;
+    }
   }
