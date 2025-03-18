@@ -20,7 +20,7 @@ body {
 
 /* Apply color styles to elements */
 h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
 }
 
 p {
@@ -63,7 +63,6 @@ footer {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    /* transition: background-color 0.3s ease, transform 0.2s ease; */
 }
 
 .btn-primary {
@@ -290,6 +289,43 @@ footer {
 
 .video-img {
     width: 100%;
+}
+
+/* styles for benefits section */ 
+
+#benefits {
+    padding: 40px 200px 40px 200px;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+}
+
+.benefit-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .benefit-card {
+    flex: 1;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #F2F5F6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+  }
+
+
+.benificial-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 @media (max-width: 768px) {
