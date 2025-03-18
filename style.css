@@ -9,7 +9,6 @@ body {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
     line-height: 1.4;
-    /* padding: 20px; */
 }
 
 /* Define a primary color palette using CSS variables */
@@ -222,10 +221,10 @@ footer {
 /* styles for video section */ 
 
 #video-section {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     margin: 0 auto; 
     background-color: var(--primary-color);
     padding: 40px 200px 0px 200px;
@@ -234,20 +233,19 @@ footer {
 
 
 .video-title {
-    font-size: 2.5rem;
+    font-size: 44px;
     font-weight: bold;
     margin-bottom: 10px;
     color: white;
 }
 
 .video-title .highlight {
-    color: #FFC107; /* Adjust based on your design */
+    color: #FFC107; 
 }
 
 .video-description {
     font-size: 1rem;
     color: white;
-     width: 40%; 
 }
 
 /* Thumbnail Wrapper */
@@ -255,6 +253,10 @@ footer {
     position: relative;
     display: inline-block;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Play Icon Styling */
@@ -282,22 +284,22 @@ footer {
 .video-title-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 80px;
 }
 
+.video-img {
+    width: 100%;
+}
 
 @media (max-width: 768px) {
 
     .body-container {
-        /* gap: 100px; */
         padding-top: 64px;
     }
 
     body {
         padding: 0px;
-        /* line-height: 1.2; */
     }
 
     .desktop-only {
@@ -320,7 +322,6 @@ footer {
     .hero-content {
         flex-direction: column; 
         text-align: center;
-        /* gap: 5; */
     }
 
     .inner-hero-content {
@@ -396,12 +397,52 @@ footer {
     }
 
     .nav-menu .btn {
-        width: 40%; /* Makes buttons nearly full-width */
-        padding: 14px 20px; /* Adjust padding for mobile */
-        font-size: 0.9rem; /* Slightly smaller font */
+        width: 40%; 
+        padding: 14px 20px; 
+        font-size: 0.9rem; 
     }
 
     .nav-menu .login-button {
         background-color: #F2F5F6;
     }
+
+    /* video section responsiveness */
+
+    #video-section {
+        padding: 2rem 10px 0 10px;
+    }
+    
+
+    .video-title {
+        font-size: 1.5rem;
+    }
+
+    .video-title-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-bottom: 25px;
+    }
+
+    .play-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .video-description {
+        font-size: 0.8rem;
+    }
+        
 }
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .video-title {
+        font-size: 1.8rem;
+    }
+
+    .video-description {
+        font-size: 0.9rem;
+    }
+  }
