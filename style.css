@@ -351,6 +351,7 @@ footer {
 
 .customer-img {
     height: 600px;
+    /* width: 100vw; */
 }
 
 .bridge-content .highlight {
@@ -360,6 +361,30 @@ footer {
 .arrow {
     margin-bottom: -0.6rem;
 }
+
+/* numbers section css */
+
+.numbers-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+}  
+.numbers-container .number {
+    font-size: 3rem;
+    color: #043A53;
+}
+
+.numbers-container .description {
+    font-size: 1.3rem;
+    color: #1E1E1E;
+}
+
+#numbers .heading {
+    text-align: center;
+}
+
 
 @media (max-width: 768px) {
 
