@@ -79,6 +79,22 @@ footer {
     font-weight: bold;
 }
 
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.web-break {
+    display: inline;
+}
+
+.mobile-break {
+    display: none;
+}
+
 /* hero section styles */
 
 #hero {
@@ -93,7 +109,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    /* gap: 5rem; */
 }
 
 .inner-hero-content {
@@ -116,4 +132,44 @@ footer {
 .hero-para {
     font-size: 1.1rem;
     color: #12141D;
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 0px;
+        /* line-height: 1.2; */
+    }
+
+    .desktop-only {
+        display: none;
+    }
+    
+    .mobile-only {
+        display: block;
+    }
+
+    .web-break {
+        display: none;
+    }
+
+    .mobile-break {
+        display: inline;
+    }
+
+    /* hero section responsiveness ticket-4 */
+    .hero-content {
+        flex-direction: column; 
+        text-align: center;
+        /* gap: 5; */
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+
+    .hero-para {
+        font-size: 0.8rem;
+    }
 }
