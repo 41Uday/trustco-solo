@@ -44,8 +44,6 @@ header, main, footer {
 
 footer {
     text-align: center;
-    background-color: var(--secondary-color);
-    color: white;
     padding: 10px 0;
 }
 
@@ -539,6 +537,56 @@ footer {
     height: auto;
     object-fit: cover;
     flex: 1;
+}
+
+/* footer section styles defining */
+
+.footer {
+    padding: 50px 100px ;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    width: 100%;
+    flex: 1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding-top: 20px;
+}
+
+.footer-li {
+    color: #404040;
+}
+
+.footer-heading {
+    margin-bottom: 1.3rem;
+}
+
+.footer-links {
+    flex: 1;
+}
+
+footer .hero-para {
+    flex: 1;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
 }
 
 @media (max-width: 768px) {
