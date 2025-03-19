@@ -669,6 +669,33 @@ footer {
     #meet-founder .customer-img {
         max-width: 99%;
     }
+
+     /* testimonials section mobile responsiveness */
+
+     #testimonials {
+        padding: 20px;
+    }
+
+    #testimonials .heading {
+        text-align: center;
+    }
+
+    .testimonial {
+        flex: 0 0 calc(100%);
+    }
+
+    .author-info .h3 {
+        font-size: 12px;
+    }
+    
+    .testimonial-container {
+        /* flex-direction: row;
+        justify-content: center;
+        align-items: center; */
+        gap: 20px;
+    }
+
+    
 }
 
 
@@ -729,4 +756,15 @@ footer {
     #meet-founder .customer-img {
         max-width: 60%;
     }
+
+    /* testimonials section responsiveness */
+
+    #testimonials {
+        padding: 50px;
+    }
+
+    .testimonial {
+        flex: 0 0 calc(50% - 32px);
+    }
+
   }
