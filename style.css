@@ -467,12 +467,21 @@ footer {
 }
 
 .blogs-container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
+    display: flex; 
+    gap: 64px;
+    margin-top: 2rem;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    padding-bottom: 10px;
+    scrollbar-width: none; 
+}
+
+.blogs-container::-webkit-scrollbar {
+    display: none;
 }
 
 .blog-card {
+    flex: 0 0 30%;
     background: white;
     border-radius: 12px;
     overflow: hidden;
@@ -743,7 +752,23 @@ footer {
         gap: 20px;
     }
 
-    
+    /* blogs mobile responsiveness */
+
+    #blogs {
+        padding: 20px;
+    }
+
+    .blog-card {
+        flex: 0 0 98%;
+    }
+
+    .blogs-container {
+        gap: 32px;
+    }    
+
+    .see-all {
+        display: none;
+    }
 }
 
 
@@ -813,6 +838,20 @@ footer {
 
     .testimonial {
         flex: 0 0 calc(50% - 32px);
+    }
+
+    /* blogs section tablet responsiveness */
+    
+    #blogs {
+        padding: 50px;
+    }
+
+    .blog-card {
+        flex: 0 0 48%;
+    }
+
+    .blogs-container {
+        gap: 32px;
     }
 
   }
