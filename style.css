@@ -806,6 +806,27 @@ footer {
     .see-all {
         display: none;
     }
+
+    /* banner section mobile responsiveness */ 
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-content {
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .banner-content .heading {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .banner-image {
+        max-width: 100%; 
+    }
 }
 
 
@@ -889,6 +910,20 @@ footer {
 
     .blogs-container {
         gap: 32px;
+    }
+
+    /* banner section tablet responsiveness */
+
+    .banner-content {
+        padding: 20px;
+    }
+
+    .banner-content .heading {
+        font-size:  1.8rem;
+    }
+
+    .banner-image {
+        max-width: 60%; 
     }
 
   }
