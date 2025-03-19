@@ -503,6 +503,43 @@ footer {
     gap: 10px;
 }
 
+/* banner section styles defining */ 
+
+#cta-banner {
+    background-color: #12141D;
+}
+
+.banner-content .heading {
+    color: white;
+}
+
+.banner-content .banner-para {
+    color: white;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 100px;
+}
+
+.banner-content .btn-primary {
+    background-color: #F0B73F;
+    width: fit-content;
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+}
+
+.banner-image {
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+    flex: 1;
+}
 
 @media (max-width: 768px) {
 
