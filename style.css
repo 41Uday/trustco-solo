@@ -403,6 +403,49 @@ footer {
     font-weight: bold;
 }
 
+/* testimonials section styling */
+
+#testimonials {
+    padding: 100px;
+    background-color: #F2F5F6;
+    overflow: hidden;
+}
+
+.testimonial-container {
+    display: flex; 
+    gap: 64px;
+    margin-top: 2rem;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    padding-bottom: 10px;
+    scrollbar-width: none; 
+}
+
+/* Hide scrollbar for Chrome, Edge, and Safari */
+.testimonial-container::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial {
+    flex: 0 0 calc(33% - 32px); /* Each testimonial takes 50% of the width */
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    scroll-snap-align: start; /* Snap effect for smooth scrolling */
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+
 
 @media (max-width: 768px) {
 
