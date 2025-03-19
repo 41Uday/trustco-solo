@@ -444,7 +444,55 @@ footer {
     gap: 12px;
 }
 
+/* blogs section styles defining */
 
+#blogs {
+    padding: 100px;
+}
+
+.blogs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.see-all {
+    color: black;
+    font-weight: bold;
+}
+
+.see-all:hover {
+    text-decoration: underline;
+}
+
+.blogs-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    
+}
+
+.blog-content {
+    margin-top: 1rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 
 @media (max-width: 768px) {
