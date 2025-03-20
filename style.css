@@ -595,6 +595,31 @@ footer .hero-para {
     flex-direction: row;
 }
 
+/* site credits section styles defining */
+
+.site-credits {
+    background-color: #F2F5F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    margin-top: 2rem;
+}
+
+.footer-legal-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-legal-links a {
+    color:  #92A7B0; font-size: 1.2rem;
+}
+
+.site-content {
+   color:  #92A7B0;
+   font-size: 1.2rem;
+}
+
 @media (max-width: 768px) {
 
     .body-container {
