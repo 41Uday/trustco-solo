@@ -618,6 +618,7 @@ footer .hero-para {
 .site-content {
    color:  #92A7B0;
    font-size: 1.2rem;
+   border: none;
 }
 
 @media (max-width: 768px) {
@@ -928,6 +929,14 @@ footer .hero-para {
     .footer-left {
         gap: 20px;
     }
+
+    /* site create section mobile responsivenss */
+
+    .site-credits {
+        padding: 10px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 
 
@@ -1031,6 +1040,12 @@ footer .hero-para {
 
     .footer {
         padding: 30px 50px ;
+    }
+
+    /* site create section tablet responsiveness */
+
+    .site-credits {
+        padding: 10px 50px;
     }
 
   }
